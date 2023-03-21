@@ -1,0 +1,55 @@
+.contacto .row{
+    display: flex;
+    flex-wrap: wrap-reverse; /*hace que el cuadro este abajo y la imagen arriba*/
+    gap: 1.5rem;
+    align-items: center;
+
+    form{
+        flex: 1 1 40rem;
+        padding: 2rem 2.5rem;
+        box-shadow: 0 .5rem 1.5rem black;
+        border: .1rem solid black ;
+        background: #fff;
+        border-radius: .5rem;
+    }
+
+    .imagen{
+        flex: 1 1 40rem;
+
+        img{
+            width: 100%;
+         
+        }
+    }
+
+    form {
+
+        .caja{
+            padding: 1rem;
+           font-size: 1.7rem;
+            color: #333;
+            text-transform: none;
+           border: .1rem solid black;
+           border-radius: .5rem;
+           margin: .7rem 0;
+           width: 100%;
+
+           &:focus{
+            border-color: var(--pink);
+           }
+    
+        }
+        
+        textarea{
+            height: 15rem;
+            resize: none;
+        }
+    
+    }
+
+}
+
+
+
+
+

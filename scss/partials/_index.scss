@@ -1,0 +1,151 @@
+/**/
+
+
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    
+}
+
+section{
+    padding: 2rem 9%;
+
+}
+ 
+.heading{
+    text-align: center;
+    font-size:  4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 7rem 0;
+    background: rgba(255, 51, 153, .05);
+    
+    span{
+        color:var(--pink);
+    }
+    
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color:#fff;
+    padding: .9rem 3.5rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+
+    &:hover{
+        background: var(--pink);
+        
+    }
+
+} 
+
+header{ 
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff ;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+    .logo{
+        font-size: /*30px*/ 3rem;
+        color: #333;
+        font-weight: /*700*/bolder;
+
+        span{
+            color: var(--pink);
+        }
+    }
+   
+    /*.navbar{
+        display: flex;
+    }*/
+    .navbar a{
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        color: #666;
+
+        &:hover{
+            color: var(--pink);
+        }
+    }
+
+    /*Iconos del corazn, registro y el carrito*/
+    .iconos a{
+        font-size:  2.5rem;
+        color: #333;
+        margin-left: 1.5rem;
+        &:hover{
+            color:var(--pink);
+        }
+    }
+    
+    /*Parte donde se mostrara el menu cuando sea celular*/
+    #toggler{
+        display: none;
+    }
+    
+    .fa-bars{
+        font-size: 3rem;
+        color: #333;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+        border: .1rem solid rgba(0,0,0,.3);
+        display: none;
+    }
+
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    .contenido{
+        max-width: 50rem;
+        h3{
+            font-size: 6rem;
+            color: #333;
+        }
+        span{
+           font-size: 3.5rem;
+           color: var(--pink);
+           padding: 1rem 0;
+           line-height: 1.5;
+       
+        }
+        p{
+           font-size: 1.5rem;
+           color: #999;
+           padding:1rem 0;
+           line-height: 1.5;
+       
+        }
+
+    }
+    
+}
